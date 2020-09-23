@@ -1,4 +1,4 @@
-package servlet
+package servlet;
 
 import javax.servlet.*; // servlet library
 import javax.servlet.http.*; // servlet library
