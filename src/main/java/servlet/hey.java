@@ -1,4 +1,4 @@
-mport javax.servlet.*; // servlet library
+import javax.servlet.*; // servlet library
 import javax.servlet.http.*; // servlet library
 import java.io.*; 
 
