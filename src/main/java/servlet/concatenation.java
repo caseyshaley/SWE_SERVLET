@@ -70,11 +70,11 @@ public void doPost (HttpServletRequest request, HttpServletResponse response)
 
    if (operation.equals(APlusB))
    {
-      rslt = lhsStr + rhsStr;
+      rslt = lhsStr.concat(rhsStr);
    }
    else if (operation.equals(BPlusA))
    {
-      rslt = rhsStr + lhsStr;
+      rslt = rhsStr.concat(lhsStr);
    }
 
    response.setContentType("text/html");
