@@ -22,5 +22,6 @@
 <button onclick="window.location.assign(servletURL+'/xml');">XML File persistence servlet </button>
 <button onclick="window.location.assign(servletURL+'/database');">Database persistence servlet </button>
 <button onClick="window.location.assign(servletURL+'/hey');">Casey's First Servlet </button>
+<button onClick="window.location.assign(servletURL+'/concate');">Concate Servlet </button>
 </body>
 </html>

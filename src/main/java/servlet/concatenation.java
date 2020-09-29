@@ -27,6 +27,11 @@ import javax.servlet.http.*;
 // private void PrintTail (PrintWriter out) --> Prints the HTML bottom
 //***********************************************************************
 
+@WebServlet(
+        name = "MyServlet",
+        urlPatterns = {"/concate"}
+    )
+
 public class concatenation extends HttpServlet
 {
 
