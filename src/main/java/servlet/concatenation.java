@@ -37,9 +37,9 @@ public class concatenation extends HttpServlet
 {
 
 // Location of servlet.
-static String Domain  = "cs.gmu.edu:8443";
-static String Path    = "/offutt/servlet/";
-static String Servlet = "twoButtons";
+static String Domain  = "caseys-servlet.herokuapp.com";
+static String Path    = "/";
+static String Servlet = "concate";
 
 // Button labels
 static String APlusB = "12";
