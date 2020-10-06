@@ -109,14 +109,14 @@ private void PrintHead (PrintWriter out)
 private void PrintBody (PrintWriter out, String logExpression, String varValues)
 {
    out.println("<body>");
-   out.println("<p><a href=\"https://\" + Domain + Path>Return to Home</a></p>");
+   out.println("<p><a href=\"https://caseys-servlet.herokuapp.com/\">Return to Home</a></p>");
    out.println("<h3>Logic Calculator</h3>");
    out.println("<h4>SWE 432</h4>");
    out.println("<h4>Collaborators: Fahad Ibrahim, Casey Haley</h4>");
    out.println("    <div class=\"container\">");
    out.println("        <div class=\"inner\" style=\"width: 50%\">");
    out.print  ("            <form method=\"post\"");
-   out.println(" action=\"https://\" + Domain + Path + Servlet + \"\">");
+   out.println(" action=\"https://\" + Domain + Path + Servlet>");
    out.println("");
    out.println("                <div>Instructions: </div>");
    out.println("                <ul>");
