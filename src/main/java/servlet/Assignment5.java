@@ -109,7 +109,7 @@ private void PrintHead (PrintWriter out)
 private void PrintBody (PrintWriter out, String logExpression, String varValues)
 {
    out.println("<body>");
-   //out.println("<p><a href="https://mason.gmu.edu/~chaley2/">Return to Home</a></p>");
+   out.println("<p><a href=\"https://\" + Domain + Path>Return to Home</a></p>");
    out.println("<h3>Logic Calculator</h3>");
    out.println("<h4>SWE 432</h4>");
    out.println("<h4>Collaborators: Fahad Ibrahim, Casey Haley</h4>");
@@ -124,18 +124,18 @@ private void PrintBody (PrintWriter out, String logExpression, String varValues)
    out.println("                    <li>Valid Logic Syntax values: OR, AND, NOT</li>");
    out.println("                    <li>Variables must appear in both inputs bellow</li>");
    out.println("                </ul");
-   out.println("                <label for="var">Enter Variable Values</label><br>");
-   out.println("                <textarea id="var" name="subject" value=\"" + varValues + "\"");
-   out.println("                    placeholder="Example: A = 1, B = 0,...." style="height: 50px"></textarea><br>");
-   out.println("                <label for="expression">Enter Logic Expression</label><br>");
-   out.println("                <textarea id="expression" name="subject" value=\"" + logValues + "\"");
-   out.println("                    placeholder="Example: A AND B OR C ...." style="height: 50px"></textarea>");
-   out.println("                <input type="submit" value="Submit">");
+   out.println("                <label for=\"var\">Enter Variable Values</label><br>");
+   out.println("                <textarea id=\"var\" name=\"subject\" value=\" + varValues + \"");
+   out.println("                    placeholder=\"Example: A = 1, B = 0,....\" style=\"height: 50px\"></textarea><br>");
+   out.println("                <label for=\"expression\">Enter Logic Expression</label><br>");
+   out.println("                <textarea id=\"expression\" name=\"subject\" value=\" + logValues + \"");
+   out.println("                    placeholder=\"Example: A AND B OR C ....\" style=\"height: 50px\"></textarea>");
+   out.println("                <input type=\"submit\" value=\"Submit\">");
    out.println("");
    out.println("            </form><br>");
-   out.println("            <div class="dom">");
-   out.println("                <button onclick="clearTextArea()">Clear All Fields</button>");
-   out.println("                <button onclick="resetBoxSize()">Reset Textbox Size</button>");
+   out.println("            <div class=\"dom\">");
+   out.println("                <button onclick=\"clearTextArea()\">Clear All Fields</button>");
+   out.println("                <button onclick=\"resetBoxSize()\">Reset Textbox Size</button>");
    out.println("            </div>");
    out.println("        </div>");
    out.println("    </div>");
