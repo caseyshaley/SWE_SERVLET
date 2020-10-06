@@ -113,8 +113,8 @@ private void PrintBody (PrintWriter out, String logExpression, String varValues)
    out.println("<h3>Logic Calculator</h3>");
    out.println("<h4>SWE 432</h4>");
    out.println("<h4>Collaborators: Fahad Ibrahim, Casey Haley</h4>");
-   out.println("    <div>")
-   out.println("        <div style="width: 50%">")
+   out.println("    <div>");
+   out.println("        <div style="width: 50%">");
    out.print  ("            <form method=\"post\"");
    out.println(" action=\"https://" + Domain + Path + Servlet + "\">");
    out.println("");
@@ -139,7 +139,7 @@ private void PrintBody (PrintWriter out, String logExpression, String varValues)
    out.println("            </div>");
    out.println("        </div>");
    out.println("    </div>");
-   out.println("    <h5>Collaboration Summary:</h5>")
+   out.println("    <h5>Collaboration Summary:</h5>");
    out.print  ("    <p>Fahad created the style of the entire page and the styling for the buttons, textboxs, </p>");
    out.println("etc. He also handled the sending of the information using the form given to us. Casey tested out ");
    out.println("the final product to see if anything could go wrong with it, and wrote up the collaboration ");
