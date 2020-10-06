@@ -30,7 +30,7 @@ import javax.servlet.annotation.WebServlet;
 
 @WebServlet(
 	name = "MyServlet",
-	urlPatterns = {"assignment5"}
+	urlPatterns = {"/assignment5"}
     )
 
 public class Assignment5 extends HttpServlet
