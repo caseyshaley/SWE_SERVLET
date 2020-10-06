@@ -33,7 +33,7 @@ import javax.servlet.annotation.WebServlet;
 	urlPatterns = {"assignment5"}
     )
 
-public class twoButtons extends HttpServlet
+public class Assignment5 extends HttpServlet
 {
 
 // Location of servlet.
