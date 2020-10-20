@@ -24,5 +24,6 @@
 <button onClick="window.location.assign(servletURL+'/hey');">Casey's First Servlet </button>
 <button onClick="window.location.assign(servletURL+'/concate');">Concate Servlet </button>
 <button onClick="window.location.assign(servletURL+'/assignment5');">Assignment 5</button>
+<button onClick="window.location.assign(servletURL+'/attributeServlet');">Attribute Servlet</button>
 </body>
 </html>
