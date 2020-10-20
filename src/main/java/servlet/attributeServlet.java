@@ -19,19 +19,26 @@ public void doGet (HttpServletRequest request, HttpServletResponse response)
    // Get session object
    HttpSession session = request.getSession();
 
-   String name   = request.getParameter("attrib_name");
-   String value  = request.getParameter("attrib_value");
+   String name1 = request.getParameter("attrib_name1");
+   String name2 = request.getParameter("attrib_name2");
+   String value1 = request.getParameter("attrib_value1");
+   String value2 = request.getParameter("attrib_value2");
    String remove = request.getParameter("attrib_remove");
 
    if (remove != null && remove.equals("on"))
    {
-      session.removeAttribute(name);
+      session.removeAttribute(name1);
+      session.removeAttribute(name2);
    }
    else
    {
-      if ((name != null && name.length() > 0) && (value != null && value.length() > 0))
+      if ((name1 != null && name1.length() > 0) && (value1 != null && value1.length() > 0))
       {
-         session.setAttribute(name, value);
+         session.setAttribute(name1, value1);
+      }
+      if ((name2 != null && name2.length() > 0) && (value1 != null && value2.length > 0))
+      {
+	 session.setAttribute(name2, value2);
       }
 
    }
@@ -50,16 +57,22 @@ public void doGet (HttpServletRequest request, HttpServletResponse response)
    out.println("<body>");
    out.println("<h1><center>Session attributes</center></h1>");
 
-   out.println("Enter name and value of an attribute");
+   out.println("Enter name and value for both attributes");
 
    // String url = response.encodeURL ("offutt/servlet/attributeServlet");
    String url = response.encodeURL("attributeServlet");
    out.println("<form action=\"" + url + "\" method=\"GET\">");
    out.println(" Name: ");
-   out.println(" <input type=\"text\" size=\"10\" name=\"attrib_name\">");
+   out.println(" <input type=\"text\" size=\"10\" name=\"attrib_name1\">");
 
    out.println(" Value: ");
-   out.println(" <input type=\"text\" size=\"10\" name=\"attrib_value\">");
+   out.println(" <input type=\"text\" size=\"10\" name=\"attrib_value1\">");
+
+   out.println("<br>Name: ");
+   out.println("<input type=\"text\" size=\"10\" name =\"attrib_name2\"");
+
+   out.println(" Value: ");
+   out.println(" <input type=\"text\" size=\"10\" name=\"attrib_value2\">");
 
    out.println(" <br><input type=\"checkbox\" name=\"attrib_remove\">Remove");
    out.println(" <input type=\"submit\" name=\"update\" value=\"Update\">");
