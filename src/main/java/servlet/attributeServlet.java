@@ -29,7 +29,7 @@ public void doGet (HttpServletRequest request, HttpServletResponse response)
 
       out.println("<html>");
       out.println("<head>");
-      out.println(" <title>Session lifecycle</title>");
+      out.println(" <title>Session Ended</title>");
       out.println("</head>");
       out.println("");
       out.println("<body>");
@@ -81,12 +81,12 @@ public void doGet (HttpServletRequest request, HttpServletResponse response)
       // no-cache lets the page reload by clicking on the reload link
       out.println("<meta http-equiv=\"Pragma\" content=\"no-cache\">");
       out.println("<head>");
-      out.println(" <title>Session lifecycle</title>");
+      out.println(" <title>Casey's Attributes</title>");
       out.println("</head>");
       out.println("");
 
       out.println("<body>");
-      out.println("<h1><center>Session attributes</center></h1>");
+      out.println("<h1><center>Session Attribute Adder</center></h1>");
 
       out.println("Enter name and value for both attributes");
 
